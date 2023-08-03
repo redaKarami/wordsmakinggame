@@ -1,0 +1,15 @@
+C:\Users\karam\Desktop\makeWordsGame\bin\Debug\net7.0\makeWordsGame.exe
+C:\Users\karam\Desktop\makeWordsGame\bin\Debug\net7.0\makeWordsGame.deps.json
+C:\Users\karam\Desktop\makeWordsGame\bin\Debug\net7.0\makeWordsGame.runtimeconfig.json
+C:\Users\karam\Desktop\makeWordsGame\bin\Debug\net7.0\makeWordsGame.dll
+C:\Users\karam\Desktop\makeWordsGame\bin\Debug\net7.0\makeWordsGame.pdb
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.csproj.AssemblyReference.cache
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.AssemblyInfoInputs.cache
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.AssemblyInfo.cs
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.csproj.CoreCompileInputs.cache
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.dll
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\refint\makeWordsGame.dll
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.pdb
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\makeWordsGame.genruntimeconfig.cache
+C:\Users\karam\Desktop\makeWordsGame\obj\Debug\net7.0\ref\makeWordsGame.dll
