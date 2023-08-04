@@ -19,7 +19,7 @@ namespace makeWordsGame
             while (onPlay == true)
             {
                 Console.Write($"make a word from these letters : ({scrambledLetters}) : ");
-                string? userLetters = Console.ReadLine();
+                string? userLetters = default;
                 userLetters = ReadUserEntry(userLetters);
                 userLetters = userLetters.ToLower();
                 List<char> userWordList = new();
@@ -61,12 +61,14 @@ namespace makeWordsGame
             {
                 Console.Clear();
                 Console.WriteLine("You have no lives left, good luck next time :) !");
+                return false;
             }
             else if (cnt == strLst.Count)
             {
                 Console.WriteLine("Congratulations, you guessed all words !");
+                return false;
             }
-            return false;
+            return true;
         }
         private static string ReadUserEntry(string? str)
         {
