@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj": {}
+    "C:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj": {}
   },
   "projects": {
-    "c:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj": {
+    "C:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj",
+        "projectUniqueName": "C:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj",
         "projectName": "makeWordsGame",
-        "projectPath": "c:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj",
+        "projectPath": "C:\\Users\\karam\\Desktop\\makeWordsGame\\makeWordsGame.csproj",
         "packagesPath": "C:\\Users\\karam\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\karam\\Desktop\\makeWordsGame\\obj\\",
+        "outputPath": "C:\\Users\\karam\\Desktop\\makeWordsGame\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

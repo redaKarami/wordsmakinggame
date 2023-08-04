@@ -52,23 +52,21 @@ namespace makeWordsGame
                     errorCounter++;
                     Console.WriteLine($"False, you made {errorCounter} mistakes !, you have {maxErrors - errorCounter} lives left !");
                 }
-                onPlay = WinOrLossChecker(errorCounter, counter, maxErrors, possibleWordsCount, onPlay);
+                onPlay = WinOrLossChecker(errorCounter, counter, maxErrors, possibleWordsCount);
             }
         }
-        private static bool WinOrLossChecker(int errCnt, int cnt, int mxErr, List<string> strLst, bool bl)
+        private static bool WinOrLossChecker(int errCnt, int cnt, int mxErr, List<string> strLst)
         {
             if (errCnt == mxErr)
             {
                 Console.Clear();
                 Console.WriteLine("You have no lives left, good luck next time :) !");
-                bl = false;
             }
             else if (cnt == strLst.Count)
             {
                 Console.WriteLine("Congratulations, you guessed all words !");
-                bl = false;
             }
-            return bl;
+            return false;
         }
         private static string NullOrEmptyChecker(string? str)
         {
