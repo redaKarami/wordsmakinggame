@@ -20,7 +20,7 @@ namespace makeWordsGame
             {
                 Console.Write($"make a word from these letters : ({scrambledLetters}) : ");
                 string? userLetters = Console.ReadLine();
-                userLetters = NullOrEmptyChecker(userLetters);
+                userLetters = ReadUserEntry(userLetters);
                 userLetters = userLetters.ToLower();
                 List<char> userWordList = new();
                 foreach (char c in userLetters)
