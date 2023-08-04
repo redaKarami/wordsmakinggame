@@ -70,11 +70,14 @@ namespace makeWordsGame
         }
         private static string NullOrEmptyChecker(string? str)
         {
-            while (str == string.Empty || str == null)
+            do
             {
-                Console.WriteLine("You did not enter anything, try again please");
                 str = Console.ReadLine();
-            }
+                if (str == null || str == string.Empty)
+                {
+                    Console.WriteLine("You did not enter anything. Try again.");
+                }
+            } while (str == null || str == string.Empty);
             return str;
         }
     }
