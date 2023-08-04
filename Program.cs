@@ -12,17 +12,17 @@ namespace makeWordsGame
             int counter = 0;
             int errorCounter = 0;
             int maxErrors = 3;
-            List<string> possibleWordsCount = new List<string>() { "sea", "swear", "wear", "ear", "war", "raw", "saw", "was" };
-            List<string> possibleWords = new List<string>() { "sea", "swear", "wear", "ear", "war", "raw", "saw", "was" };
-            List<string> guessedWords = new List<string>();
+            List<string> possibleWordsCount = new() { "sea", "swear", "wear", "ear", "war", "raw", "saw", "was" };
+            List<string> possibleWords = new() { "sea", "swear", "wear", "ear", "war", "raw", "saw", "was" };
+            List<string> guessedWords = new();
             bool onPlay = true;
             while (onPlay == true)
             {
                 Console.Write($"make a word from these letters : ({scrambledLetters}) : ");
                 string? userLetters = Console.ReadLine();
-                userLetters = nullOrEmptyChecker(userLetters);
+                userLetters = NullOrEmptyChecker(userLetters);
                 userLetters = userLetters.ToLower();
-                List<char> userWordList = new List<char>();
+                List<char> userWordList = new();
                 foreach (char c in userLetters)
                 {
                     if (c == ' ')
@@ -52,10 +52,10 @@ namespace makeWordsGame
                     errorCounter++;
                     Console.WriteLine($"False, you made {errorCounter} mistakes !, you have {maxErrors - errorCounter} lives left !");
                 }
-                onPlay = winOrLossChecker(errorCounter, counter, maxErrors, possibleWordsCount, onPlay);
+                onPlay = WinOrLossChecker(errorCounter, counter, maxErrors, possibleWordsCount, onPlay);
             }
         }
-        private static bool winOrLossChecker(int errCnt, int cnt, int mxErr, List<string> strLst, bool bl)
+        private static bool WinOrLossChecker(int errCnt, int cnt, int mxErr, List<string> strLst, bool bl)
         {
             if (errCnt == mxErr)
             {
@@ -70,7 +70,7 @@ namespace makeWordsGame
             }
             return bl;
         }
-        private static string nullOrEmptyChecker(string? str)
+        private static string NullOrEmptyChecker(string? str)
         {
             while (str == string.Empty || str == null)
             {
