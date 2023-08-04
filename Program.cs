@@ -68,7 +68,7 @@ namespace makeWordsGame
             }
             return false;
         }
-        private static string NullOrEmptyChecker(string? str)
+        private static string ReadUserEntry(string? str)
         {
             do
             {
