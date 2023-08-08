@@ -12,8 +12,8 @@ namespace makeWordsGame
             int counter = 0;
             int errorCounter = 0;
             int maxErrors = 3;
-            List<string> possibleWordsCount = new() { "sea", "swear", "wear", "ear", "war", "raw", "saw", "was" };
             List<string> possibleWords = new() { "sea", "swear", "wear", "ear", "war", "raw", "saw", "was" };
+            int possibleWordsCount = possibleWords.Count;
             List<string> guessedWords = new();
             bool onPlay = true;
             while (onPlay == true)
@@ -42,7 +42,7 @@ namespace makeWordsGame
                 {
                     Console.Clear();
                     counter++;
-                    Console.WriteLine($"Good Job, you guessed {counter} word out of {possibleWordsCount.Count}");
+                    Console.WriteLine($"Good Job, you guessed {counter} word out of {possibleWordsCount}");
                     possibleWords.Remove(userWord);
                     guessedWords.Add(userWord);
                 }
@@ -55,7 +55,7 @@ namespace makeWordsGame
                 onPlay = WinOrLossChecker(errorCounter, counter, maxErrors, possibleWordsCount);
             }
         }
-        private static bool WinOrLossChecker(int errCnt, int cnt, int mxErr, List<string> strLst)
+        private static bool WinOrLossChecker(int errCnt, int cnt, int mxErr, int strCnt)
         {
             bool setter = true;
             if (errCnt == mxErr)
@@ -64,7 +64,7 @@ namespace makeWordsGame
                 Console.WriteLine("You have no lives left, good luck next time :) !");
                 setter = false;
             }
-            else if (cnt == strLst.Count)
+            else if (cnt == strCnt)
             {
                 Console.WriteLine("Congratulations, you guessed all words !");
                 setter = false;
