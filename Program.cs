@@ -20,7 +20,7 @@ namespace makeWordsGame
             {
                 Console.Write($"make a word from these letters : ({scrambledLetters}) : ");
                 string? userLetters = default;
-                userLetters = ReadUserEntry(userLetters);
+                userLetters = ReadUserEntry();
                 userLetters = userLetters.ToLower();
                 List<char> userWordList = new();
                 foreach (char c in userLetters)
@@ -57,21 +57,23 @@ namespace makeWordsGame
         }
         private static bool WinOrLossChecker(int errCnt, int cnt, int mxErr, List<string> strLst)
         {
+            bool setter = true;
             if (errCnt == mxErr)
             {
                 Console.Clear();
                 Console.WriteLine("You have no lives left, good luck next time :) !");
-                return false;
+                setter = false;
             }
             else if (cnt == strLst.Count)
             {
                 Console.WriteLine("Congratulations, you guessed all words !");
-                return false;
+                setter = false;
             }
-            return true;
+            return setter;
         }
-        private static string ReadUserEntry(string? str)
+        private static string ReadUserEntry()
         {
+            string? str = default;
             do
             {
                 str = Console.ReadLine();
